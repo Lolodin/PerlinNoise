@@ -3,8 +3,8 @@ Example:
 
 	for y:=-1600; y>-4600;y=y-16 {
 		for x:=-1600;x>-3600;x=x-16 {
-			fx:= float32(float32(y)/750.00)
-			fy:= float32(float32(x)/750.00)
+			fx:= float32(float32(x)/750.00)
+			fy:= float32(float32(y)/750.00)
 			test:=PerlinNoise.Noise(fx, fy)
 			if test<=-0.01 {
 				console.WriteString("~")
